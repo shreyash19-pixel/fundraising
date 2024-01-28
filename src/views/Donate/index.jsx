@@ -21,19 +21,19 @@ const Donate = () => {
     const responsiveOptions = {
       0: {
           items: 1,
-          autoWidth: false  // Set autoWidth to false for smaller screens
+          autoWidth: false  
       },
       400: {
           items: 1,
-          autoWidth: true  // Set autoWidth to false for 400px and above
+          autoWidth: true  
       },
       768: {
           items: 2,
-          autoWidth: true   // Set autoWidth to true for 768px and above
+          autoWidth: true  
       },
       1000: {
           items: 3,
-          autoWidth: true   // Set autoWidth to true for 1000px and above
+          autoWidth: true   
       },
   };
 
