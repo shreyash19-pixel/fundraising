@@ -3,6 +3,10 @@ import { DonateAmount, DonateAmountWrap, DonateBtn, DonateBtnWrap, DonateCards, 
 import DonationImg1 from '../../assets/donation-image1.jpg'
 import DonationImg2 from '../../assets/donation-image2.jpg'
 import DonationImg3 from '../../assets/donation-image3.jpg'
+import OwlCarousel from 'react-owl-carousel';  
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css';  
+
 
 
 const Donate = () => {
@@ -13,13 +17,35 @@ const Donate = () => {
         {img: DonationImg3, title: "Help orphans to live happily", desc : "Water is life, Water is basic human need",target: "Target: $3.000"}
     
     ]
+
+    const responsiveOptions = {
+        0: {
+          items: 1,
+          autoWidth: true, 
+        },
+        768: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        },
+      };
+
   return (
     <DonateWrap id = "Programs">
         <DonateHeadingWrap>
             <DonateHeading>Some Urgent donation programs</DonateHeading>
         </DonateHeadingWrap>
         <DonateCardsWrap>
-
+        <OwlCarousel   
+            items = {1}
+          className="owl-theme"  
+          loop  
+          nav 
+          margin={20}
+          responsive={responsiveOptions} 
+          center={true}
+        > 
         {donations.map((donate) => (
             <DonateCards>
                 <ImageInfoWrap>
@@ -43,6 +69,7 @@ const Donate = () => {
                 </DonateBtnWrap>
             </DonateCards>
               ))}
+              </OwlCarousel>
         </DonateCardsWrap>
     </DonateWrap>
   )

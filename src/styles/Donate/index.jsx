@@ -33,6 +33,8 @@ export const DonateHeading = styled.h1`
     }
 `
 
+
+
 export const DonateCardsWrap = styled.div`
     width: 100%;
     display: flex;
@@ -45,11 +47,6 @@ export const DonateCardsWrap = styled.div`
         padding-inline: 12px;
     }
 
-    @media (max-width: 768px)
-    {
-        flex-direction: column;
-        align-items: center;
-    }
 `
 
 export const DonateCards = styled.div`
@@ -63,7 +60,6 @@ export const DonateCards = styled.div`
     flex-direction: column;
     gap: 30px;
     cursor: pointer;
-
     
 `
 
@@ -79,8 +75,8 @@ export const ImageWrap = styled.div`
 
 export const DonateImage = styled.img`
     width: 100%;
-    height: 220px;
     border-radius: 10px;
+    object-fit: cover;
 `
 
 export const InfoWrap = styled.div`

@@ -23,7 +23,7 @@ const Hero = () => {
             <Hands src = {Hand1} />
           </HandsWrap>
           <GetStartedBtnWrap>
-            <GetStarted href = "#">Get Started</GetStarted>
+            <GetStarted href = "#About">Get Started</GetStarted>
           </GetStartedBtnWrap>
           <HandsWrap>
             <Hands src = {Hand2} />

@@ -17,7 +17,7 @@ const Mobile = () => {
                 Donating can now be done anywhere, anytime and very easily just by using a smartphone, download now for free
             </MobileDesc>
             <MobileBtnWrap>
-                <MobileBtn>Download now</MobileBtn>
+                <MobileBtn href = "https://play.google.com/store/apps/details?id=com.shopwithscrip.app&hl=en&gl=US" target = "_blank">Download now</MobileBtn>
             </MobileBtnWrap>
         </MobileInfoWrap>
         <MobileImgSec>

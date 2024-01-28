@@ -104,7 +104,8 @@ export const MobileBtnWrap = styled.div`
     justify-content: flex-start;
 `
 
-export const MobileBtn = styled.div`
+export const MobileBtn = styled.a`
+    text-decoration: none;
     background-color: white;
     color: #3F47CC;
     padding: 15px 30px;

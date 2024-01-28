@@ -94,7 +94,6 @@ export const HandsWrap = styled.div`
 
 export const Hands = styled.img`
       width: 100%;
-    max-width: 900px;
 `
 export const GetStartedBtnWrap = styled.div`
     width: 100%;

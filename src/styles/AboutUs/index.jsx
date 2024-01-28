@@ -116,12 +116,17 @@ export const LearnMoreBtn = styled.a`
 
 export const AboutUsImageWrap = styled.div`
   width: 100%;
-  
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.01);
+    }
 `
 
 export const AboutUsImage = styled.img`
   width: 100%;
-  height: 530px;
   border-radius: 30px;
   filter: brightness(0.5); 
+  object-fit: cover;
 `

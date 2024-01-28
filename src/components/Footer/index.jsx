@@ -37,9 +37,9 @@ const Footer = () => {
                     </FooterLinksTitle>
                 </FooterLinksTitleWrap>
                 <FooterLinks>
-                    <CompanyEmail op href = "#">{link.link1}</CompanyEmail>
-                    <CompanyEmail op href = "#">{link.link2}</CompanyEmail>
-                    <CompanyEmail op href = "#">{link.link3}</CompanyEmail>
+                    <CompanyEmail op = {true} href = "#">{link.link1}</CompanyEmail>
+                    <CompanyEmail op = {true} href = "#">{link.link2}</CompanyEmail>
+                    <CompanyEmail op = {true} href = "#">{link.link3}</CompanyEmail>
                 </FooterLinks>
             </FooterLinksWrap>
             ))}
