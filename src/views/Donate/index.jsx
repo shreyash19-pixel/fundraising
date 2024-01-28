@@ -19,17 +19,23 @@ const Donate = () => {
     ]
 
     const responsiveOptions = {
-        0: {
+      0: {
           items: 1,
-          autoWidth: true, 
-        },
-        768: {
+          autoWidth: false  // Set autoWidth to false for smaller screens
+      },
+      400: {
+          items: 1,
+          autoWidth: true  // Set autoWidth to false for 400px and above
+      },
+      768: {
           items: 2,
-        },
-        1000: {
+          autoWidth: true   // Set autoWidth to true for 768px and above
+      },
+      1000: {
           items: 3,
-        },
-      };
+          autoWidth: true   // Set autoWidth to true for 1000px and above
+      },
+  };
 
   return (
     <DonateWrap id = "Programs">
