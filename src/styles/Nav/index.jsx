@@ -10,6 +10,11 @@ export const NavWrap = styled.div`
     {
         padding: 15px 30px;
     }
+
+    @media (max-width: 500px)
+    {
+        padding: 15px;
+    }
 `
 
 export const NavBar = styled.div`

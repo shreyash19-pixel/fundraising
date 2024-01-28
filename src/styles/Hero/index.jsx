@@ -6,6 +6,7 @@ export const HeroWrap = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+    padding-bottom: 20px;
     gap: 60px;
 `
 export const HeadingsWrap = styled.div`

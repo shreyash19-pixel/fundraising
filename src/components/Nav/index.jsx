@@ -15,6 +15,10 @@ const Nav = () => {
         setNav(!nav)
     }
 
+    const handleOverflow = () => {
+        setNav(true)
+    }
+
   return (
     <NavWrap>
         <NavBar>
@@ -33,10 +37,10 @@ const Nav = () => {
                     <GiHamburgerMenu /> : <RxCross2 />}
             </HamburgerWrap>
             {!nav && (<ResponsiveNav>
-                <NavLinks about href = "#About">About Us</NavLinks>
-                <NavLinks href = "#Programs">Programs</NavLinks>
+                <NavLinks about href = "#About" onClick = {handleOverflow}>About Us</NavLinks>
+                <NavLinks href = "#Programs" onClick = {handleOverflow}>Programs</NavLinks>
                 <NavLinks href = "https://play.google.com/store/apps/details?id=com.shopwithscrip.app&hl=en&gl=US"  target = "_blank">Download</NavLinks>
-                <ContactUs href = "#Contact">Contact Us</ContactUs>
+                <ContactUs href = "#Contact" onClick = {handleOverflow}>Contact Us</ContactUs>
             </ResponsiveNav>)}
         </NavBar>
     </NavWrap>
