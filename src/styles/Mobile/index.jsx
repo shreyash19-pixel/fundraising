@@ -7,33 +7,23 @@ export const MobileContainer = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #3F47CC;
-    padding-inline: 120px;
+    padding-inline: 60px;
     padding-top: 30px;
     display: flex;
     gap: 20px;
-
-    @media (max-width: 768px)
-    {
-        flex-direction: column;
-        gap: 35px;
-        padding-inline: 80px;
-    }
-
-    @media (max-width: 500px)
-    {
-        padding-inline: 60px;
-    }
-
-    @media (max-width: 362px)
-    {
-        padding-inline: 35px;
-    }
+    
 `
 
 export const MobileWrap = styled.div`
     width: 100%;
     max-width: 1200px;
     display: flex;
+
+    @media (max-width: 768px)
+    {
+        flex-direction: column;
+        gap: 35px;
+    }
 `
 
 export const MobileInfoWrap = styled.div`

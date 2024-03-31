@@ -2,32 +2,12 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
      width: 100%;
-    padding: 120px;
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #F5F5F5;
-
     gap: 20px;
-
-    @media (max-width: 1000px)
-    {
-        padding-inline: 80px;
-    }
-
-    @media (max-width: 768px)
-    {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 90px;
-    }
-
-    @media (max-width: 500px)
-    {
-      padding-inline: 30px;
-        
-    }
 `
 
 
@@ -35,21 +15,24 @@ export const FooterWrap = styled.div`
    width: 100%;
    max-width: 1200px;
    display: flex;
-       justify-content: space-between;
+   justify-content: space-between;
+
+   @media (max-width: 768px)
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 90px;
+    }
 `
 
 export const PersonalInfoWrap = styled.div`
     width: 100%;
-    max-width: 350px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
-    @media (max-width: 500px)
-    {
-       max-width: 500px;
-        
-    }
 `
 
 export const CompanyLogoWrap = styled.div`
