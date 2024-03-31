@@ -5,20 +5,21 @@ export const CategoriesWrap = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 150px;
+    padding: 100px 125px;
     background-color: #fafafa; 
     gap: 40px;
 
-    @media (max-width: 768px)
+    @media (max-width: 1024px)
     {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-inline: 25px;
+        gap: 70px;
     }
 `
 
 export const CategoriesCardWrap = styled.div`
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     display: grid;
     grid-gap: 16px;
     grid-template-columns: 1fr 1fr;
@@ -72,9 +73,11 @@ export const CategoriesDescWrap = styled.div`
     flex-direction: column;
     gap: 20px;
 
-    @media (max-width: 768px)
+    @media (max-width: 1024px)
     {
+        max-width: 1200px;
         text-align: center;
+        align-items: center;
     }
 `
 

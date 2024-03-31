@@ -7,7 +7,6 @@ import { RxCross2 } from "react-icons/rx";
 const Nav = () => {
 
     const [nav, setNav] = useState(true)
-    const [buttonClicked, setButtonClicked] = useState(false);
 
     !nav?document.body.style.overflow="hidden":document.body.style.overflow="auto";
 

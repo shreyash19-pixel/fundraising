@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-
-export const FooterWrap = styled.div`
-    width: 100%;
+export const FooterContainer = styled.div`
+     width: 100%;
     padding: 120px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #F5F5F5;
-    justify-content: space-between;
+
     gap: 20px;
 
     @media (max-width: 1000px)
@@ -27,6 +28,14 @@ export const FooterWrap = styled.div`
       padding-inline: 30px;
         
     }
+`
+
+
+export const FooterWrap = styled.div`
+   width: 100%;
+   max-width: 1200px;
+   display: flex;
+       justify-content: space-between;
 `
 
 export const PersonalInfoWrap = styled.div`

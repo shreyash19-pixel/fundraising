@@ -35,6 +35,7 @@ export const AboutUsWrap = styled.div`
 
 export const AboutUsHeadingWrap = styled.div`
     width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -116,6 +117,9 @@ export const LearnMoreBtn = styled.a`
 
 export const AboutUsImageWrap = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 
@@ -126,6 +130,7 @@ export const AboutUsImageWrap = styled.div`
 
 export const AboutUsImage = styled.img`
   width: 100%;
+  max-width: 1200px;
   border-radius: 30px;
   filter: brightness(0.5); 
   object-fit: cover;

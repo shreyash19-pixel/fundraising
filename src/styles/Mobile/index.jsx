@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 
-export const MobileWrap = styled.div`
+export const MobileContainer = styled.div`
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #3F47CC;
     padding-inline: 120px;
     padding-top: 30px;
@@ -27,8 +30,15 @@ export const MobileWrap = styled.div`
     }
 `
 
+export const MobileWrap = styled.div`
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+`
+
 export const MobileInfoWrap = styled.div`
     width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
